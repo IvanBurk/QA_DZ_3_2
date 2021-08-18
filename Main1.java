@@ -1,12 +1,13 @@
 public class Main1 {
     public static void main(String[] args) {
         int check = 100;
-        int enrollment = 2120;
+        int enrollment = 5120;
+        int bonus = (enrollment*1)/100;
         int balance = check + enrollment;
+        System.out.println("Баланс: " + balance);
         if (enrollment > 1000) {
-            balance = check + enrollment + ((enrollment*1)/100);
+            System.out.println("Бонус: " + bonus);
         }
-        System.out.println(balance);
     }
 }
 //        if (enrollment > 1000) {
